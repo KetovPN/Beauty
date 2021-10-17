@@ -5,7 +5,7 @@
 	<title>Document</title>
 </head>
 <body>	
-
+	<!--  
 	<h1>Заголовок</h1>
 	<h2>подзаголовок</h2>
 	<p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. 
@@ -28,7 +28,7 @@
 	<img src="https://c.wallhere.com/photos/c5/0f/cat_grass_lie_down_striped-1027838.jpg!s" 
 	alt="Котяра">
 
-	<!-- Структурные теги -->
+	
 	<p>
 	<span>Далеко-далеко за </span>
 	<span>Далеко-далеко за </span>
@@ -37,6 +37,14 @@
 	<div>Далеко-далеко за </div>
 	<div>Далеко-далеко за </div>
 	<div>Далеко-далеко за </div>
+
+	<header></header>
+	<footer></footer>
+	<main></main>
+	<article></article>
+    <aside></aside>
+	<nav></nav>
+
 
 	<table>
 		<thead>
@@ -60,8 +68,54 @@
 				<td>3</td>
 			</tr>	
 		</tfoot>
-	</table> 
-	<!-- Формы -->
+	</table> -->
 
+	<!-- Формы -->
+	<form action=".handle.php" method="get">
+		<div>
+			<label for="age">Возраст</label>
+			<input id="age" type="number" name="Age">
+		</div>
+		<div>
+			<label for="name">Имя</label>
+			<input id="name"type="text" name="Name" placeholder="Иван">		
+		</div>
+		<div>
+			<label>Оценка:</label>
+			<input id="mark1" value="1" type="radio" name="mark">
+			<label for="mark1">Плохо</label>
+			<input id="mark2" value="2" type="radio" name="mark">
+			<label for="mark2">Хорошо</label>
+			<input id="mark3" value="3" type="radio" name="mark">
+			<label for="mark3">Отлично</label>
+		</div>
+		<div>
+			<label for="sel1">Одиночный выбор</label>
+			<select id="sel1" name="Sel1">
+				<option value="1">Опция 1</option>
+				<option value="2">Опция 2</option>
+				<option value="3">Опция 3</option>
+			</select>
+		</div>
+		<div>
+			<label for="selm">Множественный выбор:</label>
+			<br>
+			<select multiple id="selm" name="SelM">
+				<option value="1">Опция 1</option>
+				<option value="2">Опция 2</option>
+				<option value="3">Опция 3</option>
+			</select>
+		</div>
+		<div>
+			<label for="desc">Комментарий:</label>
+			<br>
+			<textarea id="desc" name="Desc" id="" cols="30" rows="10"></textarea>
+		</div>
+		<div>
+			<input id="agree" type="checkbox" name="Agree">
+			<label for="agree">Принимаю условия соглашения</label>
+		</div>
+		<button>Отправить</button>
+	</form>
 </body>
 </html>
