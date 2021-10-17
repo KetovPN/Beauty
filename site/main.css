@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid black;  
+}
+
+.text {
+    display: block;
+}
+
+/* .text + .list {
+    padding-top: 200px;
+}
+
+.list > li {
+    border: 1px solid;
+} */
+
+.btn {
+    border: none;
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.btn:hover {
+    background-color: cyan;
+    transform: scale(1.1);
+}
+
+.list li:first-child {
+    padding-left: 30px;
+}
+
+.list li:nth-child(2n) {
+    padding-left: 40px;
+}
+
+.list li:last-child {
+    padding-left: 10px;
+}
+
+.list li:not(:last-child) {
+    margin-bottom: 10px;
+}
