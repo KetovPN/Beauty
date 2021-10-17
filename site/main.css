@@ -2,6 +2,11 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    height: 3000px;
+}
+
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -76,16 +81,6 @@ html {
     content: '*';
 }
 
-.btn.btn-blue {
-    background: darkblue;
-    color: #fff;
-}
-
-.wrapper .btn {
-    background-color: yellow;
-    color: #000;
-}
-
 .section {
     display: flex;
     flex-direction: column;
@@ -101,4 +96,42 @@ html {
 .section div:first-child {
     height: 40px;
     align-self: flex-start;
+}
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    /* position: relative; */
+    /* transform: translateX(100px); */
+}
+
+.btn {
+    position: sticky;
+    top: 0px;
+    margin-top: 30px;
+}
+
+.wrapper2 {
+    position: relative;
+}
+
+.circle,
+.square {
+    position: absolute;
+    top: 0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+    z-index: 1;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: green;
 }
