@@ -71,6 +71,10 @@ a {
     justify-content: space-between;
 }
 
+.vert {
+    flex-direction: column;      
+}
+
 .logo {
     color: #333333;
     font-size: 24px;
@@ -98,15 +102,32 @@ a {
     color: #00BF78
 }
 
+.social {
+   margin-left: 20px;
+}
+
+.social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.social li:not(:last-child) {
+    margin-bottom: 16px; 
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}
+
 .hero {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     overflow: hidden;
-}
-
-.hero__img,
-.hero_content {
-    width: 50%; 
 }
 
 .hero__img {
@@ -117,11 +138,10 @@ a {
     z-index: 0;
 }
 
-.hero__img__circle {
+.hero__circle {
     position: absolute;
     right: 0px;
     bottom: -110px;
-
     background-color: #FB9475;
     width: 472px;
     height: 472px;
@@ -140,13 +160,66 @@ a {
    margin: 0 0 60px; 
 }
 
-.hero__contacts__title {
+.contacts {
+    text-align: right;
+}
+
+.contacts__title {
     font-size: 18px;
     font-weight: 600;
     margin: 0; 
  }
  
- .hero__contacts__subtitle {
+ .contacts__subtitle {
     font-size: 11px;
     margin: 0; 
+ }
+
+ .video-box {
+    width: 445px;
+    height: 295px;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+    
+.video-box:hover .video-box__action{
+    transform: scale(1.1);
+}    
+ .video-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 20%;
+ }
+
+.video-box__action {
+    color: white;
+    position: relative;
+    /* top: 61px; */
+    margin-top: 62px;
+    transition: 0.4s;
+ }
+
+ .video-box__action:before {
+    content: '';
+    position: absolute;
+    left: 62px;
+    top: -62px;
+    height: 62px;
+    width: 62px;
+    background-image: url(./img/play.svg);
+    background-position: center;
+    background-repeat: no-repeat;
  }
