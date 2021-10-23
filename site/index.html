@@ -1,23 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" href="./main.css">
 </head>
-<body>	
-	<div class="container">
-		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>			
-			<li><a href="#">5</a></li>
-			<li><a href="#">6</a></li>
-			<li><a href="#">7</a></li>
-			<li><a href="#">8</a></li>
-		</ul>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<a href="./" class="logo">Мир красоты</a>
+					<nav class="navigation">
+						<ul>
+							<li><a href="#">Услуги и цены</a></li>
+							<li><a href="#">Мастера</a></li>
+							<li><a href="#">Наши работы</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="contacts">
+						<p class="contacts__title">8 (499) 686-17-62</p>
+						<p class="contacts__subtitle">с 10.00 до 19.00  без выходных</p>
+					</div>
+				</div>
+				<div class="hero">
+					<div class="hero__content">
+						<h1 class="hero__title">Создай свой образ вместе с нами</h1>
+						<p class="hero__subtitle">Идеальный образ за 60 минут</p>
+						<button class="btn hero__btn">Записаться онлайн</button>
+					</div>
+					<div class="hero__img">
+						<div class="hero__circle"></div>
+						<img class src="./img/hero.png" alt="Фото девушки-модели">
+					</div>
+					<div class="social">
+						<ul>
+							<li><a href="#"><img src="./img/soc_vk.svg" alt="VK"></a></li>
+							<li><a href="#"><img src="./img/soc_ig.svg" alt="Instagram"></a></li>
+							<li><a href="#"><img src="./img/soc_yt.svg" alt="YouTube"></a></li>
+						</ul>
+					</div>		
+				</div>
+			</div>
+		</header>
+		
+		<main class="main">
+			<div class="container">
+				<div class="about">
+					<div class="about__content">
+						<h1 class="about__title">О салоне</h1>
+						<p class="about__subtitle">Мир красоты - это уютный салон в самом центре города. Здесь работают профессиональные визажисты, стилисты и мастера татуажа</p>
+						<p class="about__text">Красота и хороший уход никогда не выходят из моды. Мы приглашаем Вас в место, где гармония обретает форму,
+							а внешность становится отражением внутреннего мира. Новая жизнь начинается с небольших изменений. Мы помогаем нашим клиентам воплотить их индивидуальность во внешнем облике. Мы создаем стиль – вместе с Вами и для Вас.</p>
+						<p class ="blue-link"><a href="#">Развернуть</a></p>	
+					</div>
+					<div class="video-box" style="background-image: url(./img/video.png)">
+						<div class="video-box__action">Короткое видео о нас</div>
+					</div>
+				</div>
+			</div>
+		</main>	
+		<footer class="footer">
+			<div class="container">
+				<div class="foot">
+					<div class="copyright">
+						<p>© 2020 «Море красоты»</p>
+						<p class ="blue-link"><a href="#">Политика конфиденциальности</a></p>
+					</div>
+					<nav class="navigation">
+						<ul>
+							<li><a href="#">Услуги и цены</a></li>
+							<li><a href="#">Мастера</a></li>
+							<li><a href="#">Наши работы</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>					
+				</div>
+			</div>
+		</footer>
 	</div>
 </body>
 </html>
